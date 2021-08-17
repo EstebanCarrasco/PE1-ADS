@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usuarios",
+  "info": {
+    "name": "Usuarios",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Apellido": {
+      "type": "string",
+      "required": true
+    },
+    "Ci": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Password": {
+      "type": "password",
+      "required": true
+    },
+    "Fecha": {
+      "required": true,
+      "type": "date"
+    },
+    "Telefono": {
+      "type": "biginteger",
+      "required": true
+    },
+    "administradors": {
+      "via": "usuarios",
+      "collection": "administrador"
+    }
+  }
+}

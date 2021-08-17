@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profesors",
+  "info": {
+    "name": "Profesor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "valorHora": {
+      "type": "integer",
+      "required": true
+    },
+    "titulos": {
+      "type": "text"
+    },
+    "experiencia": {
+      "type": "text"
+    },
+    "materia": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
